@@ -39,7 +39,7 @@ def modelate_with_different_connectivity(window_size, label, connectivity_number
         bands = search(connectivity_measures, conn)[1]
         
         # The threshold can be omited to use the default one
-        graphs, _ = G.modelate(window_size = window_size, connectivity = conn, bands = bands, threshold = 0.9)  
+        graphs, _ = G.modelate(window_size = window_size, connectivity = conn, bands = bands, threshold = 0.8)  
 
         conn_empty_values = test_empty(graphs, conn_empty_values, i)
         
